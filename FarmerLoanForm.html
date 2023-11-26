@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Loan Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  
+      <img src="int.jpeg" width="960" >
+  
+      <h2>Fields marked with * are mandatory</h2>
+      <h2 style="color: rgb(240, 15, 15);"margin-left:25px;"margin-top:5px">For Official Use Only</h2>
+     <table>
+  <tr>
+     <td contenteditable="true">Application S.No.</td>
+          <td contenteditable="true">Category </td>
+            <td contenteditable="true">SF</td>
+          <td contenteditable="true">MF </td>
+            <td contenteditable="true">Others</td>
+         
+  </tr>
+  <tr>
+    <td contenteditable="true"></td>
+          <td contenteditable="true">  </td>
+            <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+         
+  </tr>
+</table>
+      
+  
+      <h3></h3>
+      <h2 margin-left:25px;"margin-top:5px">Customer Section To be filled by customer in Capital Letters</h2>
+      <p>. Type of KCC/ Amount of loan required: </p>
+      
+      <div class = "form-container">
+        <input type="radio" id="option1" name="option" value="option1">
+        <label for="option1">Issue of fresh KCC </label>
+        <input type="radio" id="option2" name="option" value="option2">
+        <label for="option2">Enhancement of existing limit</label>`
+        <input type="radio" id="option3" name="option" value="option3">
+        <label for="option3">Activation of inoperative KCC account </label>
+         
+      </div>
+      <br>
+      <label for="name">Amount of loan required</label>
+      <input type="text" name="name" required>
+      <form name="loan-application-form" action="/ime_loan.php" method="post">
+
+      <fieldset>
+        <h2 margin-left:65px;>A. Personal Details</h2>
+        <legend>To be filled by customer in Capital Letters</legend>
+
+        <label for="title">Title</label>
+        <select name="title">
+          <option value="mr">Mr.</option>
+          <option value="mrs">Mrs.</option>
+          <option value="ms">Ms.</option>
+        </select>
+
+        <label for="name">Applicant's Name</label>
+        <input type="text" name="name" required>
+
+        <label for="father-husband-name">Father/Husband's Name</label>
+        <input type="text" name="father-husband-name" required>
+<br>
+        <label for="educational-details">Educational Details</label>
+        <select name="educational-details">
+          <option value="undergraduate">Undergraduate</option>
+          <option value="graduate">Graduate</option>
+          <option value="postgraduate">Postgraduate and above</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="number-of-dependents">Number of Dependents</label>
+        <input type="number" name="number-of-dependents" required>
+
+        <label for="status">Status</label>
+        <select name="status">
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+        </select>
+<br>
+        <label for="religion">Religion</label>
+        <input type="text" name="religion" required>
+                 <br>
+        <label for="present-address">Pan Number</label>
+        <input type="text" name="present-address" required>
+        <label for="Gender">Gender</label>
+        <select name="Gender">
+          <option value="female">Female</option>
+          
+          <option value="male">Male</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="present-address">Present-address</label>
+        <input type="text" name="present-address" required>
+
+        <label for="option8"></label>
+      
+
+        <div class = "form-container">
+          <p class="address-info">Present Address is same as Previous</p>
+         
+          <label for="option2">No</label>` 
+          <input type="radio" id="address" name="address" value="option2">
+          <label for="option1">Yes</label>
+          <input type="radio" id="address" name="address" value="option1">
+          <p class="ak">If NO, please fill permanent address below
+          </p>
+        </div>
+       
+       
+      <label for="religion">Permanent address</label>
+      <input type="text" name="religion" required></label> 
+      <h2 margin-left:65px;>B. Occupational Details</h2>
+       
+      <label for="name">1.Company/Employer Name*</label>
+      <input type="text" name="name" required>
+
+      <label for="Company/Employer Name">2.Company/Employer Address*</label>
+     
+      <input type="text" name="Country" required>
+      <br>
+      <label for="name">3.Country</label>
+      <input type="text" name="Country" required>
+      <label for="name">4. Preferred Mailing Address*</label> 
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Residential">
+      <label for="vehicle1">Residential
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Office">
+      <label for="vehicle2"> Office</label>
+    </label> 
+    <hr class="thick-line">
+   
+    <p>A.7 : Number of people of depend on customer financially. It includes retired parents or other relatives,
+        children or sibling below 18 but not spouse.</p>
+       <p> B.3 : All the loan related posts and other mails will be sent to this address. Please fill the address where the
+        customer will most comfortable to collect posts after showing a valid photo-ID proof.
+       </p>
+        <hr class="thick-line"> 
+   <h4>For any queries, please reach at our Toll free helpline numbers: +91 1234567890, +91 6378292932, or write to
+    us at helpline@gmail.com, or scan the above QR code for detailed instructions.<h4>
+      <h2 margin-left:65px;>C. INCOME AND BANKING DETAILS</h2>
+       
+      <label for="name">1.Monthly Salary</label>
+      <input type="text" name="name" required>
+
+      <label for="Company/Employer Name">2.Annual Turnover</label>
+      <input type="text" name="Country" required>
+      <label for="name">3.Net Profit
+      </label>
+      <input type="text" name="Country" required>
+      <label for="name">4.Cust ID</label>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Residential">
+      <label for="vehicle1">5.Branch*</label>
+      <input type="text" id="vehicle2" name="vehicle2" value="Office">
+      <label for="vehicle2"> 6. Opened In*</label>
+      <input type="text" id="vehicle2" name="vehicle2" value="Office">
+     <h4>7. Existing Loan Details</h4>
+      <table classborder="1"> <!-- Add border attribute for visualization, you can remove it for a borderless table -->
+        <tr>
+          <td contenteditable="true">Bank Name</td>
+          <td contenteditable="true"> Loan Type </td>
+          <td contenteditable="true">Amount</td>
+          <td contenteditable="true">EMI</td>
+          <td contenteditable="true">Tenure</td>
+          <td contenteditable="true">Start Date</td>
+          <td contenteditable="true">Loan A/C number
+          </td>
+        </tr>
+        <tr>
+          <td contenteditable="true">fss</td>
+           <td contenteditable="true">fss</td>
+            <td contenteditable="true">fss</td>
+             <td contenteditable="true">fss</td>
+              <td contenteditable="true">fss</td>
+               <td contenteditable="true">fss</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td contenteditable="true">fss</td>
+           <td contenteditable="true">fss</td>
+            <td contenteditable="true">fss</td>
+             <td contenteditable="true">fss</td>
+              <td contenteditable="true">fss</td>
+               <td contenteditable="true">fss</td>
+          <td>Row 3, Col 7</td>
+        </tr>
+        <tr>
+           <td contenteditable="true">fss</td>
+            <td contenteditable="true">fss</td>
+          <td>500000</td>
+           <td contenteditable="true">fss</td>
+            <td contenteditable="true">fss</td>
+             <td contenteditable="true">fss</td>
+              <td contenteditable="true">fss</td>
+        </tr>
+        <tr>
+          <td contenteditable="true">fss</td>
+           <td contenteditable="true">fss</td>
+          <td>200000</td>
+           <td contenteditable="true">fss</td>
+          <td contenteditable="true">fss</td>
+           <td contenteditable="true">fss</td>
+           <td contenteditable="true">fss</td>
+        </tr>
+      </table>
+    
+    </label> 
+    <h2>D. Loan Details - Key Fact Statment Including Schedule of Charges</h2>
+    <label for="name">1.Loan Amount*</label>
+    <input type="text" name="name" required>
+
+    <label for="Company/Employer Name">2.EMI</label>
+    <input type="text" name="Country" required>
+    <label for="name">3. Number of Advanced EMI
+
+    </label>
+    <input type="text" name="Country" required>
+    <h2> E. Particulars of total land holdings of the applicant and crops:</h2>
+    <table classborder="1"> <!-- Add border attribute for visualization, you can remove it for a borderless table -->
+      <tr>
+        <td contenteditable="true">Name of the
+          Village</td>
+        <td contenteditable="true"> Survey/ Khasra
+          No.
+           </td>
+        <td contenteditable="true">Owned</td>
+        <td contenteditable="true">Leased</td>
+        <td contenteditable="true">Share
+          Cropper</td>
+        <td contenteditable="true">Area in
+          acres
+          </td>
+        <td contenteditable="true">Kharif Crops
+        </td>
+        <td contenteditable="true">Rabi Crops</td>
+        <td contenteditable="true">Other Crops</td>
+      </tr>
+     
+      
+     
+      <tr>
+        <td contenteditable="true">fss</td>
+         <td contenteditable="true">fss</td>
+          <td contenteditable="true">fss</td>
+           <td contenteditable="true">fss</td>
+            <td contenteditable="true">fss</td>
+             <td contenteditable="true">fss</td>
+              <td contenteditable="true">fss</td>
+               <td contenteditable="true">fss</td>
+                <td contenteditable="true">fss</td>
+      </tr>
+    </table>
+    <h2>F. KCC to Fisheries and Animal Husbandry Farmers:</h2>
+    <table classborder="1"> <!-- Add border attribute for visualization, you can remove it for a borderless table -->
+      <tr>
+        <td>Name of the
+          Village</td>
+        <td contenteditable="true"> Total productive Dairy Animals
+           </td>
+        <td contenteditable="true">Total Sheep & Goat </td>
+        <td contenteditable="true">Total Pigs</td>
+        <td contenteditable="true">Total Poultry</td>
+        <td contenteditable="true">Other Crops
+          </td>
+        <td contenteditable="true">Kharif Crops
+        </td>
+        <td contenteditable="true">Rabi Crops</td>
+        <td contenteditable="true">Other Crops</td>
+      </tr>
+     
+      
+     
+      <tr>
+         <td contenteditable="true">fss</td>
+        <td contenteditable="true">fss</td>
+         <td contenteditable="true">fss</td>
+          <td contenteditable="true">fss</td>
+           <td contenteditable="true">fss</td>
+            <td contenteditable="true">fss</td>
+             <td contenteditable="true">fss</td>
+              <td contenteditable="true">fss</td>
+               <td contenteditable="true">fss</td>
+      </tr>
+    </table>
+     <p><h4>H. Declaration:</h4>
+      I/ We hereby declare that all information furnished by me/us is true, correct and complete to the best of my/our knowledge and belief. I/We
+      hereby undertake to abide by the terms and conditions that the Bank may stipulate in sanction of this loan and inform Bank in the event of
+      acquiring any other assets during the tenure of the advance. I/ We hereby declare that I/We have not availed KCC from any other bank branch.
+     <h4>Signature/ Thumb impression of Borrowers</h4></p>
+     <h4><span style="color: red;",text-align: center;>Acknowledgement/ In-principle approval</span></h4>
+  <p>Received the loan application from Shri/Smt <input type="text" name="Country" required> residence of  
+    <input type="text" name="Country" required>
+    on 
+    <input type="text" name="Country" required>for the purpose of opening of KCC account.
+    <br>2. We convey our In-principle approval for the loan applied. The final sanction will be subject to the Bank’s field inspection, due
+    diligence and terms and conditions as applicable for KCC loans.</p>
+
+      
+      <form action="/ime_loan.php" method="post" enctype="multipart/form-data">
+        <label for="fileToUpload">Upload Aadhaar Card</label>
+        <input type="file" id="fileToUpload" name="fileToUpload">
+        <input type="submit" value="Upload">
+        <label for="fileToUpload">Upload Pan Card</label>
+        <input type="file" id="fileToUpload" name="fileToUpload">
+        <input type="submit" value="Upload">
+      </form>
+    </form>
+    <button type="submit">Submit</button>
+ 
+  
+</div>
+  <script src="script.js"></script>
+
+  <style>
+    h4 span {
+    text-align: center;
+    margin-left: 30%;
+  } 
+    
+.address-info{
+  margin:0px 5px 0px 0px;
+  padding:0;
+}
+.blank {
+  border-bottom:2px solid #ccc;
+
+}
+.ak{
+  margin:0px 5px 0px 0px;
+  padding:0;
+  margin-left: 20%;
+  color: #e41d1d;
+}
+.thick-line {
+ 
+  height: 4px;
+  font-weight: bolder;
+  color:black;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  
+}
+.form-container{
+  display: flex;
+  
+
+}
+.inline-tick {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+}
+.inline-tick input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  z-index: 1;
+}
+table {
+  width: 100%; /* Set the width of the table */
+  border-collapse: collapse; /* Optional: collapse borders for a cleaner look */
+}
+
+td {
+  padding: 10px; /* Optional: add padding to cells for better spacing */
+  border: 1px solid #000; /* Optional: add border to cells for better visibility */
+}
+.inline-tick .tick-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.inline-tick input:checked + .tick-mark {
+  background-color: green;
+}
+
+h2 {
+  text-align: center;
+  
+    border: 2px solid rgb(249, 244, 244);
+    background-color: rgb(223, 219, 219);
+    padding: 10px;
+  }
+
+  
+  #ok {
+    margin-right: 65px;
+    margin-left: 35px;
+  }
+
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+legend {
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+label, input {
+  margin: 0px 2px 0px 2px;
+  padding:0;
+}
+
+input, select {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+
+
+}
+
+
+</style>
+<script>
+document.querySelector('form[name="loan-application-form"]').addEventListener('submit', function(event) {
+  // Check if all required fields are filled in
+  if (!this.querySelector('input[name="name"]').value) {
+    event.preventDefault();
+    alert('Please enter your name.');
+  } else if (!this.querySelector('input[name="father-husband-name"]').value) {
+    event.preventDefault();
+    alert('Please enter your father/husband\'s name.');
+  } else if (!this.querySelector('select[name="educational-details"]').value) {
+    event.preventDefault();
+    alert('Please select your educational details.');
+  } else if (!this.querySelector('input[name="number-of-dependents"]').value) {
+    event.preventDefault();
+    alert('Please enter your number of dependents.');
+  } else if (!this.querySelector('select[name="status"]').value) {
+    event.preventDefault();
+    alert('Please select your status.');
+  } else if (!this.querySelector('input[name="religion"]').value) {
+  
+    const cells = document.querySelectorAll('td[contenteditable]');
+
+cells.forEach(cell => {
+  cell.addEventListener('focus', () => {
+    // Highlight the cell on focus
+    cell.style.backgroundColor = '#f0f0f0';
+  });
+
+  cell.addEventListener('blur', () => {
+    // Remove highlight on blur
+    cell.style.backgroundColor = 'transparent';
+
+    // Save the updated data
+    saveTableData();
+  });
+
+  cell.addEventListener('keydown', (event) => {
+    // Prevent default key events like Enter from submitting the form
+    if (event.key === 'Enter') {
+      event.preventDefault();
+    }
+  });
+});
+
+function saveTableData() {
+  // Implement logic to save the updated table data to a database or other storage
+}
+  </script>
+  </body>
+    </<html>
